@@ -1,1 +1,1 @@
-program in c followed by a new line
+task 5 using printf
