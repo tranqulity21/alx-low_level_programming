@@ -1,1 +1,1 @@
- rogram that prints the alphabet in lowercase, followed by a new line.
+lowercase and uppercase
