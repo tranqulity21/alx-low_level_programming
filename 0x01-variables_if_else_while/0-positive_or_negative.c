@@ -6,12 +6,11 @@
  *
  * description:using the main function
  * this program prints "program is positive,zero,or negative"
- * return: 0
+ * return:always (success)
  */
 int main(void)
 {
-	int n;
-	
+	int n;	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/*your code goes here*/
@@ -21,7 +20,7 @@ int main(void)
 	}
 	else if (n < 0)                                                 
 	{
-		 printf("%d is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 	else 
 	{
