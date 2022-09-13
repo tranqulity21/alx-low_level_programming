@@ -1,1 +1,1 @@
-prints all single digit numbers of base 10 starting from 0, followed by a new line.only allowed to use variable type char 
+Write a program that prints the lowercase alphabet in reverse, followed by a new line.
