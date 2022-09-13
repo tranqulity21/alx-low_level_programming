@@ -3,11 +3,11 @@
 /**
  * main - print if the number is positive,negative or zero
  *
- * description using the main function
+ * description:using the main function
  * this program prints programming is positive,zero and negative
  * return: 0
  */
-int main (void)
+int main(void)
 {
 	int num;
 	char l;
