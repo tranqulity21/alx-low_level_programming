@@ -1,11 +1,11 @@
 #include<stdio.h>
 
 /**
- * main - print if the number is positive,negative or zero
+ * main - prints all the numbers of base 16 in lowercase
  *
  * description:using the main function
  * this program prints programming is positive,zero and negative
- * return: 0
+ * Return: Always 0
  */
 int main(void)
 {
