@@ -1,1 +1,1 @@
-Write a function that prints the alphabet, in lowercase, followed by a new line.
+print abc 10 times with nested loops
