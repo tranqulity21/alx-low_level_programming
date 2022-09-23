@@ -3,21 +3,24 @@
 /**
  *rot13 - rot13 encoder
  *@s: string to be encoded
- *
+ *transform_2 - helper function to map letter to rot13 encoding
  * Return: addresss of s
  */
 char *rot13(char *s)
 {
-	int i;
-	char one[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-	char two[] = "nopqrstuvwxyzabcdefghijklm";
+	int i, j;
+	char one[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char two[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; *(s + i); i++)
 	{
-		if ((s[i] > 64 && s[i] < 91) || (s[i] > 96 && s[i] < 123))
+		for (j = 0; j < 52; j++)
 		{
-			s[i] = (s[i] - 65 > 25)?
-				two[s[i] - 97] : one[s[i] - 65];
+			if (one[j] == *(s + i))
+			{
+				*(s + i) = two[j];
+				break;
+			}
 		}
 	}
 	return (s);
